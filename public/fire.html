@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fire.css">
+    <title>Task Manager</title>
+    <script src="https://cdn.firebase.com/libs/firebasejs/8.2.1/firebase.js"></script>
+    <script src="fire.js"></script>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <di class="task-form">
+      <input type="text" id="task-input" placeholder="Enter a new task">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+     <!--tasl list-->
+    <ul id="task-list"></ul>
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+   
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCwK8tY31uuCV2lfd6Uzab94OSIW16DUg0",
+          authDomain: "my-first-project-d8914.firebaseapp.com",
+          projectId: "my-first-project-d8914",
+          storageBucket: "my-first-project-d8914.appspot.com",
+          messagingSenderId: "553547121226",
+          appId: "1:553547121226:web:758cfb2cc9b192beec1cb3",
+          measurementId: "G-3X8BB7JX0X"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
