@@ -5,6 +5,10 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+
+    mollyomondi@ gmail.com ]
+conf.gmail
+if(access granted==1){
+"run the.prog.mail"}
   }
 }
